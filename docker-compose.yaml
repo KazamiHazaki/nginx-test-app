@@ -6,7 +6,7 @@ services:
     ports:
 #      # Map port 8080 on your machine to port 80 in the container
       - "8555:80"
-#    volumes:
+    volumes:
       # Mount the local html folder into the NGINX web root directory
-#      - ./html:/usr/share/nginx/html
+      - ./html/index.html:/usr/share/nginx/html/index.html
     restart: unless-stopped
