@@ -8,5 +8,5 @@ services:
       - "8555:80"
     volumes:
       # Mount the local html folder into the NGINX web root directory
-      - ./html:/usr/share/nginx/html
+      - ./html/index.html:/usr/share/nginx/html/index.html
     restart: unless-stopped
